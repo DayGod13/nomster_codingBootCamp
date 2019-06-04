@@ -7,11 +7,10 @@
         <% if place.user.present? %>
             <small><%= place.user.email %></small>
         <% end %>
-        <div class="pic-caption-index">
+        <div class="pic-caption">
     <% if place.photos.present?  %>
 
         <% place.photos.each do |photo| %>
-        <%= photo.caption %>
         <br />
         <img src=<%= photo.picture_url %> class="col-12 col-6 place-pic"/>
     
