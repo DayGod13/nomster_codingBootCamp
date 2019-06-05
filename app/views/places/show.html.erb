@@ -12,8 +12,9 @@
   <% @place.photos.each do |photo| %>
   <%= photo.caption %>
   <br />
-   <img src=<%= photo.picture_url %> class="col-12 col-6 place-pic"/>
-    
+  <div class="place-pic">
+ <img src=<%= photo.picture_url %> class="col-12 col-6 place-pic"/>
+    </div>
   <% end %>
 <% end %>
 
